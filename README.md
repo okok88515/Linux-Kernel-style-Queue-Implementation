@@ -7,7 +7,7 @@ queue.h：定義 element_t、queue_context_t 結構與函式介面。
 
 queue.c：主要的 queue 函式實作。
 
-list.h：Linux kernel 的 linked list 宏（如果有包含）。
+list.h：Linux kernel 的 linked list 宏。
 
 ✨ 功能說明
 基本操作
@@ -50,30 +50,3 @@ q_ascend()：刪除右側存在較小值的節點。
 
 q_descend()：刪除右側存在較大值的節點。
 
-📌 特點
-
-採用 Linux Kernel Doubly Linked List (list_head) 巨集進行管理。
-
-多數功能對應到 LeetCode 經典題目，例如：
-
-Delete the Middle Node of a Linked List
-
-Remove Duplicates from Sorted List II
-
-Swap Nodes in Pairs
-
-Reverse Nodes in k-Group
-
-Sort List
-
-Merge k Sorted Lists
-
-🚀 編譯與執行
-# 編譯
-gcc -o queue main.c queue.c -Wall -Wextra -g
-
-# 執行
-./queue
-
-
-（需搭配 main.c 測試程式）
